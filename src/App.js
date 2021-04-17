@@ -2,14 +2,11 @@ import React, { useState } from "react";
 import "./App.css";
 import songs from "./data/songs.json";
 
-
 function App() {
-
   const [searchText, setSearchtext] = useState("");
 
   const searchSongs = (userSearchText) => {
     setSearchtext(userSearchText);
-    
   };
   return (
     <div className="App">
@@ -20,14 +17,21 @@ function App() {
       <p>There are {songs.length} songs.</p>
       <ul>
         {songs.map((song) => {
+
           return (
             <>
               {(song.author.toLowerCase().includes(searchText.toLowerCase()) ||
                 song.name.toLowerCase().includes(searchText.toLowerCase())) && (
-                  <li>
-                    {song.author} - {song.name}
-                  </li>
-                )}
+                <li>
+                  {song.author} - {song.name}
+
+                  {song.showDescription && (
+                  <ul>
+                    <li>{song.description}</li>
+                  </ul>
+                  )}
+                </li>
+              )}
             </>
           );
         })}
