@@ -1,0 +1,34 @@
+Make a create-react-app site with JSON data, dynamic page and interactions
+
+# How it is
+
+We want create the following:
+
+- create a new site with create-react-app:"songdatabase" (cannot be in capital letters)
+- create a JSON file with song data
+...
+
+[
+{ "name": "Hey Jude",
+  "author": "Beatles",
+  "description": "A really good song for parties."  
+},
+
+{ "name": "I want to hold your hand",
+  "author": "Beatles",
+  "description": "Was also sung in German."  
+},
+
+{ "name": "Tommy",
+  "author": "The Who",
+  "description": "A cool Rock opera"  
+}
+]
+
+...
+
+- display data on website (App.jsx)
+- search ("<input..>" box)
+- interactive quiz (show song, ask for group)
+
+

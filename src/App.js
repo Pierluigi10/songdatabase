@@ -8,11 +8,15 @@ function App() {
   const searchSongs = (userSearchText) => {
     setSearchtext(userSearchText);
   };
+
+  const toggleDescription = (song) => {
+    console.log(`You clicked ${song.name}`);  //Apostrofi non virgolette!!
+  }
   return (
     <div className="App">
       <h1>Song Database</h1>
       <div>
-        <input type="text" onChange={(e) => searchSongs(e.target.value)} />
+        <input type="text" onChange={((e) => searchSongs(e.target.value))} />
       </div>
       <p>There are {songs.length} songs.</p>
       <ul>
@@ -22,8 +26,8 @@ function App() {
             <>
               {(song.author.toLowerCase().includes(searchText.toLowerCase()) ||
                 song.name.toLowerCase().includes(searchText.toLowerCase())) && (
-                <li>
-                  {song.author} - {song.name}
+                <li><span
+                  onClick={() => toggleDescription(song)}>{song.author} - {song.name}</span>
 
                   {song.showDescription && (
                   <ul>
