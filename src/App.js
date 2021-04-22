@@ -33,7 +33,6 @@ function App() {
           <About />
         </Route>
         <Route path="/">
-          ..home
           <h1>Song Database</h1>
           <div>
             <input type="text" onChange={(e) => searchSongs(e.target.value)} />
