@@ -44,3 +44,22 @@ ul.list li {
 .iconMusic:hover {
   color: grey;
 }
+
+/* smartphone view */
+@media (max-width: 577px) {
+  h1.title {
+    font-size: 2em;
+  }
+
+  input.inputBox {
+    width: 100%;
+    font-size: 1.5em;
+  }
+}
+
+/* computer/table view */
+@media (min-width: 578px) {
+  .mainGraphic {
+    box-shadow: 10px 10px 5px grey;
+  }
+}

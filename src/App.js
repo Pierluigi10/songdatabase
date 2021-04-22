@@ -4,6 +4,7 @@ import initialSongs from "./data/songs.json";
 import { Switch, Route, Link } from "react-router-dom";
 import About from "./components/about";
 import { BsMusicNoteBeamed } from "react-icons/bs";
+import { SiDiscogs} from "react-icons/si";
 
 function App() {
   const [searchText, setSearchtext] = useState("");
@@ -34,11 +35,15 @@ function App() {
           <About />
         </Route>
         <Route path="/">
-          <h1>
+          <h1 className="title">
             <BsMusicNoteBeamed className="iconMusic" /> Song Database
           </h1>
           <div>
-            <input type="text" onChange={(e) => searchSongs(e.target.value)} />
+            <input
+              type="text"
+              className="inputBox"
+              onChange={(e) => searchSongs(e.target.value)}
+            />
           </div>
           <p>
             There are {songs.length} songs and{" "}
