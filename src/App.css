@@ -4,12 +4,13 @@ body {
 
 nav ul {
   display: flex;
-  }
+}
+
 nav ul li a {
   text-decoration: none;
 }
 
-  nav ul li {
-    list-style: none;
-    margin-left: 5px;
-  }
+nav ul li {
+  list-style: none;
+  margin-left: 5px;
+}

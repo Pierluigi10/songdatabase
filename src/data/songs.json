@@ -1,21 +1,36 @@
 [
-    { "name": "Hey Jude",
-      "author": "Beatles",
-      "description": "A really good song for parties.",
-      "showDescription": false 
-    },
-    
-    { "name": "I want to hold your hand",
-      "author": "Beatles",
-      "description": "Was also sung in German.",
-      "showDescription": false  
-    },
-    
-    { "name": "Tommy",
-      "author": "The Who",
-      "description": "A cool Rock opera",
-      "showDescription": false 
-    }
-    
-    ]
-    
+  {
+    "name": "Hey Jude",
+    "author": "Beatles",
+    "description": "A really good song for parties.",
+    "showDescription": false
+  },
+
+  {
+    "name": "I want to hold your hand",
+    "author": "Beatles",
+    "description": "Was also sung in German.",
+    "showDescription": false
+  },
+
+  {
+    "name": "Tommy",
+    "author": "The Who",
+    "description": "A cool Rock opera",
+    "showDescription": false
+  },
+
+  {
+    "name": "Love will tears us apart",
+    "author": "Joy Division",
+    "description": "A soundtrack for sad moments",
+    "showDescription": false
+  },
+
+  {
+    "name": "London Calling",
+    "author": "The Clash",
+    "description": "A famous song",
+    "showDescription": false
+  }
+]
