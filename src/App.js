@@ -3,6 +3,7 @@ import "./App.css";
 import initialSongs from "./data/songs.json";
 import { Switch, Route, Link } from "react-router-dom";
 import About from "./components/about";
+import { BsMusicNoteBeamed } from "react-icons/bs";
 
 function App() {
   const [searchText, setSearchtext] = useState("");
@@ -33,7 +34,9 @@ function App() {
           <About />
         </Route>
         <Route path="/">
-          <h1>Song Database</h1>
+          <h1>
+            <BsMusicNoteBeamed className="iconMusic" /> Song Database
+          </h1>
           <div>
             <input type="text" onChange={(e) => searchSongs(e.target.value)} />
           </div>
@@ -41,7 +44,7 @@ function App() {
             There are {songs.length} songs and{" "}
             {songs.filter((song) => song.showDescription).length} are showing.
           </p>
-          <ul>
+          <ul className="list">
             {songs.map((song, index) => {
               return (
                 <>
@@ -52,7 +55,6 @@ function App() {
                       .toLowerCase()
                       .includes(searchText.toLowerCase())) && (
                     <li>
-                      {index}.{" "}
                       <span onClick={() => toggleDescription(index)}>
                         {song.author} - {song.name}
                       </span>

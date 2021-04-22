@@ -1,5 +1,7 @@
 body {
   padding: 20px;
+  background-color: #333;
+  color:ivory;
 }
 
 nav ul {
@@ -13,4 +15,24 @@ nav ul li a {
 nav ul li {
   list-style: none;
   margin-left: 5px;
+}
+
+ul.list li {
+  list-style: none;
+}
+
+.iconMusic {
+  color: red;
+  /* width: 100px;
+  height: 100px; */
+  /* border: 1px solid red; */
+  /* stroke: blue;
+  stroke-width: .3px; */
+  /* box-shadow: 2px 2px 2px #2A51CE; */
+  stroke: grey;
+  filter: drop-shadow(5px 5px 10px yellow);
+}
+
+.iconMusic:hover {
+  color: grey;
 }
