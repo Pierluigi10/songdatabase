@@ -4,7 +4,7 @@ import initialSongs from "./data/songs.json";
 import { Switch, Route, Link } from "react-router-dom";
 import About from "./components/about";
 import { BsMusicNoteBeamed } from "react-icons/bs";
-import { SiDiscogs} from "react-icons/si";
+import { SiDiscogs } from "react-icons/si";
 
 function App() {
   const [searchText, setSearchtext] = useState("");
@@ -49,7 +49,7 @@ function App() {
             There are {songs.length} songs and{" "}
             {songs.filter((song) => song.showDescription).length} are showing.
           </p>
-          <ul className="list">
+          <div className="list">
             {songs.map((song, index) => {
               return (
                 <>
@@ -59,21 +59,20 @@ function App() {
                     song.name
                       .toLowerCase()
                       .includes(searchText.toLowerCase())) && (
-                    <li>
-                      <span onClick={() => toggleDescription(index)}>
+                    <>
+                      <SiDiscogs className="discogs" />
+                      <div onClick={() => toggleDescription(index)}>
                         {song.author} - {song.name}
-                      </span>
-                      {song.showDescription && (
-                        <ul>
-                          <li>{song.description}</li>
-                        </ul>
-                      )}
-                    </li>
+                      
+                      {song.showDescription && <div>{song.description}</div>}
+                      
+                      </div>
+                    </>
                   )}
                 </>
               );
             })}
-          </ul>
+          </div>
         </Route>
       </Switch>
     </div>
