@@ -59,15 +59,15 @@ function App() {
                     song.name
                       .toLowerCase()
                       .includes(searchText.toLowerCase())) && (
-                    <>
-                      <SiDiscogs className="discogs" />
+                    <div className="wrapper">
+                      <div className="iconRecord">
+                        <SiDiscogs className="discogs" />
+                      </div>
                       <div onClick={() => toggleDescription(index)}>
                         {song.author} - {song.name}
-                      
-                      {song.showDescription && <div>{song.description}</div>}
-                      
+                        {song.showDescription && <div>{song.description}</div>}
                       </div>
-                    </>
+                    </div>
                   )}
                 </>
               );

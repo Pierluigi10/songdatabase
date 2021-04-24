@@ -59,7 +59,14 @@ ul.list li {
 
 /* computer/table view */
 @media (min-width: 578px) {
-  .mainGraphic {
-    box-shadow: 10px 10px 5px grey;
+  .wrapper {
+    display: flex;
+    align-items: center;
+    /* border: 1px solid red; */
+  }
+
+  .iconRecord {
+    margin: 2px 5px 0 0;
+    /* border: 1px solid red; */
   }
 }

@@ -32,3 +32,17 @@ We want create the following:
 - interactive quiz (show song, ask for group)
 
 
+
+- Computer Ansicht: discs links:
+  - inline-block
+  - flex
+  - grid
+ 
+- Animation auf Records
+  
+- Smartphone Ansicht: background-color statt discs
+
+
+
+
+
