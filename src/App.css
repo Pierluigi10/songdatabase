@@ -58,6 +58,18 @@ ul.list li {
   .iconRecord {
     display: none;
   }
+
+  div.wrapper {
+    padding: 20px;
+    border: 1px solid #666;
+    margin: 0 0 8px 0;
+    background-color: #555;
+    box-shadow: 1px 1px 2px #777;
+  }
+
+  div.wrapper:nth-child(odd) {
+    background-color: #444;
+  }
 }
 
 /* computer/table view */
@@ -68,6 +80,26 @@ ul.list li {
     /* border: 1px solid red; */
   }
 
+  input.inputBox {
+    width: 100%;
+    font-size: 1.5em;
+  }
+  .iconRecord {
+    display: none;
+  }
+
+  div.wrapper {
+    padding: 20px;
+    border: 1px solid #666;
+    margin: 0 0 8px 0;
+    background-color: #555;
+    box-shadow: 1px 1px 2px #777;
+  }
+
+  div.wrapper:nth-child(odd) {
+    background-color: #444;
+  }
+  
   .iconRecord svg {
     width: 30px;
     height: 30px;
