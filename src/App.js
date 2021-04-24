@@ -63,7 +63,7 @@ function App() {
                       <div className="iconRecord">
                         <SiDiscogs className="discogs" />
                       </div>
-                      <div onClick={() => toggleDescription(index)}>
+                      <div className="textRecord" onClick={() => toggleDescription(index)}>
                         {song.author} - {song.name}
                         {song.showDescription && <div>{song.description}</div>}
                       </div>

@@ -55,6 +55,9 @@ ul.list li {
     width: 100%;
     font-size: 1.5em;
   }
+  .iconRecord {
+    display: none;
+  }
 }
 
 /* computer/table view */
@@ -65,8 +68,30 @@ ul.list li {
     /* border: 1px solid red; */
   }
 
+  .iconRecord svg {
+    width: 30px;
+    height: 30px;
+  }
+
   .iconRecord {
+    display: flex;
+    align-items: center;
     margin: 2px 5px 0 0;
     /* border: 1px solid red; */
+    animation: record-spin infinite 10s linear;
+  }
+
+  .iconRecord:hover {
+    animation: record-spin infinite 1s linear;
+    color: #777;
+  }
+
+  @keyframes record-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
   }
 }
